@@ -1,0 +1,1 @@
+documento com um texto aleatorio apenas para realizar um teste de conexão entre minha máquina e o repositório que deve ser excluído assim que o teste for realizado.
