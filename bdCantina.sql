@@ -3,7 +3,7 @@ go
 
 use bdCantina
 
---Criação das tabelas
+--CriaÃ§Ã£o das tabelas
 
 create table tblCliente
 (
@@ -20,7 +20,7 @@ create table tblPedido
 	idPedido int primary key identity(1,1) not null,
 	idCliente int not null,
 	dataPedido date not null,
-	precoPedido float not null,
+	precoPedido smallmoney not null,
 	codTipoPag int not null,
 	retPedido bit not null,
 )
@@ -60,7 +60,7 @@ create table tblCategoria
 	codCategoria int primary key identity(1,1) not null,
 	nomeCategoria varchar not null
 )
--- Criação dos relacionamentos
+-- CriaÃ§Ã£o dos relacionamentos
 
 -- pedido - cliente / pagamento
 alter table tblPedido with check add constraint FK_tblPedido_tblCliente foreign key (idCliente)
